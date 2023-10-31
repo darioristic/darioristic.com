@@ -22,7 +22,7 @@ If you're browsing this page it means you probably wish to know more about me. W
 Specializing in digital innovation and solving problems that other people avoid. I have worked in all type of environments from dark rooms, and noisy NOCs to fancy corporation. I have worked solo, in small or big teams, in globally and locally distributed remote teams, and incorporated high-stakes fast-paced startups. 
 
 ## Work
-Vast experience in building complete businesses, from a startup to an established company phase, proves my ability to assemble high-quality teams of associates, who use technology to drive innovation and solve complex business problems today. Defining client-friendly products in collaboration with interdisciplinary teams in a completely agile work environment.
+An entrepreneur who loves a challenge. Enjoys building and developing online businesses and products, finding creative solutions to problems. Vast experience in building complete businesses, from a startup to an established company phase, proves my ability to assemble high-quality teams of associates, who use technology to drive innovation and solve complex business problems today. Defining client-friendly products in collaboration with interdisciplinary teams in a completely agile work environment.
 
 </section><section>
 
