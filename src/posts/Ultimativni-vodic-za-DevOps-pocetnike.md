@@ -1,6 +1,6 @@
 ---
 title: Ultimativni vodič za DevOps početnike
-description: My experience with deploying my static Lume site with GitHub Actions.
+description: Vodič za sve one koji su zainteresovani za razvoj karjere u pravcu DevOps 
 date: 2021-06-22
 ---
 
@@ -35,26 +35,6 @@ Ciklusi puštanja novih verzija aplikacija bili su dugi zato što ni operacije n
 
 Ideja je da se promene u kodu rade često, idealno i više puta dnevno, sa primenom temeljne automatizacije i testiranja kako bi se smanjili zastoji. U slučajevima bilo kakvih problema omogućen je vrlo brz i lak povratak na prethodnu i stabilnu verziju.
 
-## Šta je zapravo posao DevOps inženjera?
-Opis posla DevOps inženjer se mnogo razlikuje u zavisnosti od tipa poslovne organizacije. Različiti su pristupi kod projektno orjentisani kompaniju u odnosu na produktno orjentisane kompanije. Postoji mišljenje da titula DevOps inženjera ne bi trebalo da postoji, jer je DevOps „kultura i filozofija“ odnosno „način rada i razmišljanja“ – a ne uloga ili pozicija.
-
-Ovo nas navodi na zaključak da postoji sloboda u dubini znanja DevOps pozicije u različitom poslovnom okruženju i zavisnosti od potreba organizacije. Često se u zadnje vreme spominje teorija da stvaranje dodatnog DevOps silos tima poništava svrhu preklapanja odgovornosti i zajedničkog rada različitih timova što je suština DevOps-a.
-
-Organizacije koje dobro razumeju ovu metodologiju nemaju DevOps pozicije. One rade na stavljanju fokusa na uske specijalizacije u određenim oblastima na pozicijama: inženjera infrastrukture, inženjera za pouzdanost sistema (SRE), CI/CD inženjera, sistem administratora.
-
-Jedina stvar koja je sigurna je da DevOps inženjer mora dobro razumeti kulturu i praksu DevOps-a i trebao bi biti u mogućnosti da premosti sve nedostatke u komunikaciji između ostalih članova tima.
-
-Iako je DevOps izraz koji može obuhvatiti mnoge uloge, postoje neki zajednički zadaci u ovim različitim ulogama:
-
-- Dizajn i implementacija CI/CD procesa
-- Automatska izgradnja i konfiguracija infrastrukture
-- Instalacija, konfiguracija i održavanje orkestratora kontejnera
-- Bliska saradnja sa programerima na polju dizajna novih servisa
-- Dizajniranje platformi za nadgledanje i praćenje
-- Pružanje servisa održavanja platforme
-- Obezbedjivanje sigurnosti infrastrukture
-
-Potrebno je malo planiranja i dokumentacije, ali solidna strategija A/B testiranja će vam uštedeti mnogo vremena i povećati vašu profitabilnost na duže staze.
 
 </section><footer>
 

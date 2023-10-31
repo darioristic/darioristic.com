@@ -33,22 +33,6 @@
 &lt;p&gt;Ova ideja je suprotstavlja dva tima jedan protiv drugog, jedan sa krajnjim ciljem stabilnosti, drugi sa krajnjim ciljem promena. Izbegavanje konflikata je dovelo do smanjenih unapredjenja aplikacija kroz kreiranje novih verzija i funkcionalnosti kako bi se izbegli prekidi i osigurala stabilnost.&lt;/p&gt;
 &lt;p&gt;Ciklusi puštanja novih verzija aplikacija bili su dugi zato što ni operacije ni programeri nisu razumeli jasno podelu odgovornosti prilikom puštanje nove verzije koda. To je značilo da je potrebno mnogo nedjelja i mnogo prekovremenog rada da bi se implementacije uradile pravilno i često je uzrokovalo značajne zastoje. DevOps ima za cilj da to reši uvođenjem kohezivnije saradnje između programera i operativnih inženjera, sa modelom  preklapanja odgovornosti u celom procesu.&lt;/p&gt;
 &lt;p&gt;Ideja je da se promene u kodu rade često, idealno i više puta dnevno, sa primenom temeljne automatizacije i testiranja kako bi se smanjili zastoji. U slučajevima bilo kakvih problema omogućen je vrlo brz i lak povratak na prethodnu i stabilnu verziju.&lt;/p&gt;
-&lt;h2&gt;Šta je zapravo posao DevOps inženjera?&lt;/h2&gt;
-&lt;p&gt;Opis posla DevOps inženjer se mnogo razlikuje u zavisnosti od tipa poslovne organizacije. Različiti su pristupi kod projektno orjentisani kompaniju u odnosu na produktno orjentisane kompanije. Postoji mišljenje da titula DevOps inženjera ne bi trebalo da postoji, jer je DevOps „kultura i filozofija“ odnosno „način rada i razmišljanja“ – a ne uloga ili pozicija.&lt;/p&gt;
-&lt;p&gt;Ovo nas navodi na zaključak da postoji sloboda u dubini znanja DevOps pozicije u različitom poslovnom okruženju i zavisnosti od potreba organizacije. Često se u zadnje vreme spominje teorija da stvaranje dodatnog DevOps silos tima poništava svrhu preklapanja odgovornosti i zajedničkog rada različitih timova što je suština DevOps-a.&lt;/p&gt;
-&lt;p&gt;Organizacije koje dobro razumeju ovu metodologiju nemaju DevOps pozicije. One rade na stavljanju fokusa na uske specijalizacije u određenim oblastima na pozicijama: inženjera infrastrukture, inženjera za pouzdanost sistema (SRE), CI/CD inženjera, sistem administratora.&lt;/p&gt;
-&lt;p&gt;Jedina stvar koja je sigurna je da DevOps inženjer mora dobro razumeti kulturu i praksu DevOps-a i trebao bi biti u mogućnosti da premosti sve nedostatke u komunikaciji između ostalih članova tima.&lt;/p&gt;
-&lt;p&gt;Iako je DevOps izraz koji može obuhvatiti mnoge uloge, postoje neki zajednički zadaci u ovim različitim ulogama:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Dizajn i implementacija CI/CD procesa&lt;/li&gt;
-&lt;li&gt;Automatska izgradnja i konfiguracija infrastrukture&lt;/li&gt;
-&lt;li&gt;Instalacija, konfiguracija i održavanje orkestratora kontejnera&lt;/li&gt;
-&lt;li&gt;Bliska saradnja sa programerima na polju dizajna novih servisa&lt;/li&gt;
-&lt;li&gt;Dizajniranje platformi za nadgledanje i praćenje&lt;/li&gt;
-&lt;li&gt;Pružanje servisa održavanja platforme&lt;/li&gt;
-&lt;li&gt;Obezbedjivanje sigurnosti infrastrukture&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Potrebno je malo planiranja i dokumentacije, ali solidna strategija A/B testiranja će vam uštedeti mnogo vremena i povećati vašu profitabilnost na duže staze.&lt;/p&gt;
 &lt;/section&gt;&lt;footer&gt;
 &lt;/footer&gt;</content>
 	</entry>
@@ -91,7 +75,6 @@ Takođe, ako ne posedujte fakultetsku diplomu ili ste tek završili fakultet pol
 &lt;/header&gt;&lt;section&gt;
 &lt;p&gt;Teško je ne biti zbunjen kada počnemo da istražujemo odakle da počnemo sa učenjem ove oblasti. Mnogo novih tehnologija se razvija konstantno i nije lako odabrati pravi put ako uzmemo u obzir da lista konstantno raste.&lt;/p&gt;
 &lt;h2&gt;Dakle, pitanje je šta prvo naučiti?&lt;/h2&gt;
-&lt;h1&gt;&lt;strong&gt;Osnovne tehničke veštine&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;Ovih šest tehničkih veština zajedničke su svakoj ulozi DevOps-a. Nakon što savladate ove veštine, spremni ste za početak apliciranja za uloge početnog nivoa ili stažiranje dok se krećete lestvicom učenja ka DevOps tehničkim veštinama:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#_Linux&quot;&gt;Linux&lt;/a&gt; - fundamentalno&lt;/li&gt;
@@ -369,6 +352,37 @@ Takođe, ako ne posedujte fakultetsku diplomu ili ste tek završili fakultet pol
 &lt;/ul&gt;
 &lt;/section&gt;&lt;footer&gt;
 Takođe, ako ne posedujte fakultetsku diplomu ili ste tek završili fakultet polaganje tehničkih ispita je dobar način za građenje kvalitenog CV-ja. U nastavku teksta posle opisa veštine biće predloženi sertifikati za polaganje ispita iz te oblasti. 
+&lt;/footer&gt;</content>
+	</entry>
+	<entry>
+		<title>Šta je DevOps inženjer - opis posla na poziciji DevOps</title>
+		<link href="http://localhost:3000/posts/sta-je-devops-inzenjer/"/>
+        <published>2017-10-05T02:00:00+02:00</published>
+		<updated>2017-10-05T02:00:00+02:00</updated>
+		<id>http://localhost:3000/posts/sta-je-devops-inzenjer/</id>
+		<content type="html">&lt;header&gt;
+&lt;h1&gt;&lt;a href=&quot;http://localhost:3000/&quot;&gt;Šta je DevOps inženjer - opis posla na poziciji DevOps&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;time datetime=&quot;2017-10-05T00:00:00.000Z&quot;&gt;5.10.2017&lt;/time&gt;&lt;/p&gt;
+&lt;/header&gt;&lt;section&gt;
+&lt;h1&gt;Šta je zapravo posao DevOps inženjera?&lt;/h1&gt;
+&lt;p&gt;Opis posla DevOps inženjer se mnogo razlikuje u zavisnosti od tipa poslovne organizacije. Različiti su pristupi kod projektno orjentisani kompaniju u odnosu na produktno orjentisane kompanije.&lt;/p&gt;
+&lt;p&gt;Postoji mišljenje da titula DevOps inženjera ne bi trebalo da postoji, jer je DevOps „kultura i filozofija“ odnosno „način rada i razmišljanja“ – a ne uloga ili pozicija.&lt;/p&gt;
+&lt;p&gt;Ovo nas navodi na  zaključak da postoji sloboda u dubini znanja DevOps pozicije u različitom poslovnom okruženju i zavisnosti od potreba organizacije.&lt;/p&gt;
+&lt;p&gt;Često se u zadnje vreme spominje teorija da stvaranje dodatnog DevOps silos tima poništava svrhu preklapanja odgovornosti i zajedničkog rada različitih timova što je suština DevOps-a.&lt;/p&gt;
+&lt;p&gt;Organizacije koje dobro razumeju ovu metodologiju nemaju DevOps pozicije. One rade na stavljanju fokusa na uske specijalizacije u određenim oblastima na pozicijama: inženjera infrastrukture, inženjera za pouzdanost sistema (SRE), CI/CD inženjera, sistem administratora.&lt;/p&gt;
+&lt;p&gt;Jedina stvar koja je sigurna je da DevOps inženjer mora dobro razumeti kulturu i praksu DevOps-a i trebao bi biti u mogućnosti da premosti sve nedostatke u komunikaciji između ostalih članova tima.&lt;/p&gt;
+&lt;p&gt;Iako je DevOps izraz koji može obuhvatiti mnoge uloge, postoje neki zajednički zadaci u ovim različitim ulogama:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dizajn i implementacija CI/CD procesa&lt;/li&gt;
+&lt;li&gt;Automatska izgradnja i konfiguracija infrastrukture&lt;/li&gt;
+&lt;li&gt;Instalacija, konfiguracija i održavanje orkestratora kontejnera&lt;/li&gt;
+&lt;li&gt;Bliska saradnja sa programerima na polju dizajna novih servisa&lt;/li&gt;
+&lt;li&gt;Dizajniranje platformi za nadgledanje i praćenje&lt;/li&gt;
+&lt;li&gt;Pružanje servisa održavanja platforme&lt;/li&gt;
+&lt;li&gt;Obezbedjivanje sigurnosti infrastrukture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;&lt;footer&gt;
+&lt;p&gt;Potrebno je malo planiranja i dokumentacije, ali solidna strategija A/B testiranja će vam uštedeti mnogo vremena i povećati vašu profitabilnost na duže staze.&lt;/p&gt;
 &lt;/footer&gt;</content>
 	</entry>
 </feed>

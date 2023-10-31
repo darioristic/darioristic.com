@@ -1,6 +1,6 @@
 ---
 title: Napredne tehničke veštine potrebne za DevOps
-description: Ovaj tekst 
+description: Ovaj tekst govori o naprednim veštinama koje je potrebno usvojiti za DevOps poziciju
 date: 2020-04-22
 ---
 

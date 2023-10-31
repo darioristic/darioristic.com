@@ -1,5 +1,5 @@
 ---
-title: Šta je DevOps inženjer
+title: Šta je DevOps inženjer - opis posla na poziciji DevOps
 description: Landing page je centralna tačka svake digitalne strategije, ima za cilj da jasno u centar prenese informaciju o ponudi ili proizvodu.
 
 date: 2017-10-05

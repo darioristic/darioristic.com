@@ -1,6 +1,6 @@
 ---
 title: Osnovne tehničke veštine potrebne za DevOps
-description: Landing page je centralna tačka svake digitalne strategije, ima za cilj da jasno u centar prenese informaciju o ponudi ili proizvodu.
+description: Ovaj tekst govori o osnovnim veštinama potrebnim za DevOps pozicije
 date: 2020-07-04
 ---
 
@@ -15,7 +15,6 @@ date: 2020-07-04
 Teško je ne biti zbunjen kada počnemo da istražujemo odakle da počnemo sa učenjem ove oblasti. Mnogo novih tehnologija se razvija konstantno i nije lako odabrati pravi put ako uzmemo u obzir da lista konstantno raste. 
 
 ## Dakle, pitanje je šta prvo naučiti?
-# **Osnovne tehničke veštine**
 
 Ovih šest tehničkih veština zajedničke su svakoj ulozi DevOps-a. Nakon što savladate ove veštine, spremni ste za početak apliciranja za uloge početnog nivoa ili stažiranje dok se krećete lestvicom učenja ka DevOps tehničkim veštinama:
 
