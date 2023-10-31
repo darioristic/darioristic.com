@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"><head>
+    
+<!-- Tech -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="generator" content="Lume">
+<link rel="manifest" href="/manifest.json">
+<link rel="alternate" href="/feed.xml" type="application/atom+xml" title="Dario Ristic personal website feed">
+<link rel="alternate" href="/feed.json" type="application/json" title="Dario Ristic personal website feed">
+
+<!-- Robots -->
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="origin">
+<link rel="canonical" href="https://darioristic.com/posts/ultimativni-vodic-za-devops-pocetnike/">
+
+<!-- Theme -->
+<meta name="theme-color" content="white">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%3E%3Ctext%20y=%22.9em%22%20font-size=%2290%22%3E👋%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/css/main.css?v=1698739689546">
+
+    
+<!-- Meta -->
+<title>Ultimativni vodič za DevOps početnike | Dario Ristic </title>
+<meta name="title" content="Ultimativni vodič za DevOps početnike | Dario Ristic ">
+<meta name="description" content="My experience with deploying my static Lume site with GitHub Actions.">
+<meta name="keywords" content="post">
+<meta name="copyright" content="Dario Ristic <dario.ristic@gmail.com>">
+<meta name="author" content="Dario Ristic <dario.ristic@gmail.com>">
+<link type="text/plain" rel="author" href="https://darioristic.com/humans.txt">
+
+    
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ultimativni vodič za DevOps početnike">
+<meta property="og:site_name" content="Dario Ristic personal website">
+<meta property="og:url" content="https://darioristic.com/posts/ultimativni-vodic-za-devops-pocetnike/">
+<meta property="og:description" content="My experience with deploying my static Lume site with GitHub Actions.">
+<meta property="og:locale" content="en">
+
+
+    
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dario_ristic">
+<meta name="twitter:title" content="Ultimativni vodič za DevOps početnike">
+<meta name="twitter:description" content="My experience with deploying my static Lume site with GitHub Actions.">
+
+
+    
+    <!-- BlogPosting Schema -->
+    <script type="application/ld+json" id="blogposting">
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://darioristic.com/posts/ultimativni-vodic-za-devops-pocetnike/#blogposting","url":"/posts/ultimativni-vodic-za-devops-pocetnike/","mainEntityOfPage":"True","headline":"Ultimativni vodič za DevOps početnike","description":"My experience with deploying my static Lume site with GitHub Actions.","dateCreated":"2021-06-22T00:00:00.000Z","datePublished":"2021-06-22T00:00:00.000Z","dateModified":"2021-06-22T00:00:00.000Z","author":{"@type":"Person","@id":"https://darioristic.com/profile/#person","name":"Dario Ristic ","url":"https://darioristic.com/profile/#person"},"publisher":{"@type":"Organization","name":"Dario Ristic ","logo":{"@type":"ImageObject","url":"https://darioristic.com/assets/img/favicon.png","width":192,"height":192}}}
+    </script>
+    
+    </head>
+    
+<body>
+    <main id="main">
+        
+        <article>
+            <header>
+<h1><a href="/">Ultimativni vodič za DevOps početnike</a></h1>
+<p><time datetime="2021-06-22T00:00:00.000Z">22.6.2021</time></p>
+</header><section>
+<h2>Za koga je ovaj vodič namenjen?</h2>
+<p>Programerima koji žele da prošire svoje znanje sa operativnim delom ekspertize koja se odnosi na implementaciju, konfigurisanje, održavanje i nadgledanje infrastrukture.</p>
+<p>Sistem administratorima koji žele da unaprede svoje veštine sa poznavanjem celokupnog životnog ciklusa proizvodnje aplikacije, sa znanjem jednog programskog jezika.</p>
+<p>Osobe koje ne spadaju u prethodne dve grupe ali se bave tehnologijom u drugim oblastima u karijeri sa znanjem pisanja koda ili drugih srodnih tehnologija.</p>
+<p>Osobe koje žele da započnu razvoj svoje karijere u pravcu modernih zanimanja danas kao što su DevOps, AIOps i MLOps.</p>
+<h2>Šta je DevOps?</h2>
+<p>Patrick Debois, konsultant za razvoj softvera, zaslužan je za stvaranje termina DevOps kada je 2009. godine, nazvao konferenciju DevOps Days, gde se pozabavio nedostatkom Agile metodologije u načinu razvoja softvera.  Reč DevOps je kombinacija izraza Development i Operations, koji predstavljaju zajednički ili deljeni pristup operativnim zadacima u procesu razvoja softvera koje obavljaju timovi za razvoj softvera i IT operativni timovi zaduženi za infrastrukturu (server, storage, networking) na kojoj se softver pokreće – izvršava.</p>
+<p>U svom najširem značenju, DevOps je filozofija koja promoviše bolju komunikaciju i saradnju između timova – i drugih – u organizaciji. U svom najužem tumačenju, DevOps opisuje usvajanje iterativnog pristupa razvoju softvera, automatizaciju u implementaciji i održavanju infrastrukture. Termin takođe obuhvata i promene u kulturi, poput izgradnje poverenja i kohezije između programera i administratora sistema radi usklađivanja tehnologije  projekata sa poslovnim zahtevima.</p>
+<h2>Kako je nastao DevOps?</h2>
+<p>U tradicionalnom razvoju softvera postojala je jasna podela posla između tima operacija i tima za razvoja softvera. Programeri su bili samo delimično uključeni u rad softvera na kome su radili i znali su vrlo malo o tome gde i kako se pokreće. U međuvremenu, operacije (administratori) su znale vrlo malo o tome šta softver zapravo radi ili o tome kako je kreiran, pa su se samo nadali da će raditi kako se očekuje.</p>
+<p>Ova ideja je suprotstavlja dva tima jedan protiv drugog, jedan sa krajnjim ciljem stabilnosti, drugi sa krajnjim ciljem promena. Izbegavanje konflikata je dovelo do smanjenih unapredjenja aplikacija kroz kreiranje novih verzija i funkcionalnosti kako bi se izbegli prekidi i osigurala stabilnost.</p>
+<p>Ciklusi puštanja novih verzija aplikacija bili su dugi zato što ni operacije ni programeri nisu razumeli jasno podelu odgovornosti prilikom puštanje nove verzije koda. To je značilo da je potrebno mnogo nedjelja i mnogo prekovremenog rada da bi se implementacije uradile pravilno i često je uzrokovalo značajne zastoje. DevOps ima za cilj da to reši uvođenjem kohezivnije saradnje između programera i operativnih inženjera, sa modelom  preklapanja odgovornosti u celom procesu.</p>
+<p>Ideja je da se promene u kodu rade često, idealno i više puta dnevno, sa primenom temeljne automatizacije i testiranja kako bi se smanjili zastoji. U slučajevima bilo kakvih problema omogućen je vrlo brz i lak povratak na prethodnu i stabilnu verziju.</p>
+<h2>Šta je zapravo posao DevOps inženjera?</h2>
+<p>Opis posla DevOps inženjer se mnogo razlikuje u zavisnosti od tipa poslovne organizacije. Različiti su pristupi kod projektno orjentisani kompaniju u odnosu na produktno orjentisane kompanije. Postoji mišljenje da titula DevOps inženjera ne bi trebalo da postoji, jer je DevOps „kultura i filozofija“ odnosno „način rada i razmišljanja“ – a ne uloga ili pozicija.</p>
+<p>Ovo nas navodi na zaključak da postoji sloboda u dubini znanja DevOps pozicije u različitom poslovnom okruženju i zavisnosti od potreba organizacije. Često se u zadnje vreme spominje teorija da stvaranje dodatnog DevOps silos tima poništava svrhu preklapanja odgovornosti i zajedničkog rada različitih timova što je suština DevOps-a.</p>
+<p>Organizacije koje dobro razumeju ovu metodologiju nemaju DevOps pozicije. One rade na stavljanju fokusa na uske specijalizacije u određenim oblastima na pozicijama: inženjera infrastrukture, inženjera za pouzdanost sistema (SRE), CI/CD inženjera, sistem administratora.</p>
+<p>Jedina stvar koja je sigurna je da DevOps inženjer mora dobro razumeti kulturu i praksu DevOps-a i trebao bi biti u mogućnosti da premosti sve nedostatke u komunikaciji između ostalih članova tima.</p>
+<p>Iako je DevOps izraz koji može obuhvatiti mnoge uloge, postoje neki zajednički zadaci u ovim različitim ulogama:</p>
+<ul>
+<li>Dizajn i implementacija CI/CD procesa</li>
+<li>Automatska izgradnja i konfiguracija infrastrukture</li>
+<li>Instalacija, konfiguracija i održavanje orkestratora kontejnera</li>
+<li>Bliska saradnja sa programerima na polju dizajna novih servisa</li>
+<li>Dizajniranje platformi za nadgledanje i praćenje</li>
+<li>Pružanje servisa održavanja platforme</li>
+<li>Obezbedjivanje sigurnosti infrastrukture</li>
+</ul>
+<p>Potrebno je malo planiranja i dokumentacije, ali solidna strategija A/B testiranja će vam uštedeti mnogo vremena i povećati vašu profitabilnost na duže staze.</p>
+</section><footer>
+</footer>
+
+        </article>
+    
+    </main>
+    
+<footer>
+    
+    <div>
+        Older<br>
+        <a href="/posts/koje-vestine-su-potrebne-za-devops/" rel="prev">Koje veštine su potrebne za DevOps?</a>
+    </div>
+    
+    
+    <div>
+        <a href="/" rel="home">Back to Index</a>
+    </div>
+</footer>
+
+
+
+
+
+</body></html>

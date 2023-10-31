@@ -1,0 +1,26 @@
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "@id": "https://darioristic.com/#website",
+    "url": "https://darioristic.com/",
+    "name": "Dario Ristic personal website",
+    "description": "Dario Ristic CEO and CO-founder at Cloud Native d.o.o.",
+    "author": {
+        "@type": "Person",
+        "@id": "https://darioristic.com/profile/#person",
+        "name": "Dario Ristic",
+        "url": "https://darioristic.com/profile/#person"
+    },
+    "mainEntity": {
+        "@type": "Person",
+        "@id": "https://darioristic.com/profile/#person",
+        "name": "Dario Ristic",
+        "url": "https://darioristic.com/profile/#person"
+    },
+    "x": {
+        "domain": "darioristic.com",
+        "shortname": "dr",
+        "locale": "en",
+        "direction": "ltr"
+    }
+}

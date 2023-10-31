@@ -1,0 +1,9 @@
+{
+  "short_name": "dr",
+  "name": "Dario Ristic personal website",
+  "description": "Dario Ristic CEO and CO-founder at Cloud Native d.o.o.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000"
+}

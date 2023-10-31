@@ -1,0 +1,41 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "@id": "https://darioristic.com/profile/#person",
+    "url": "https://darioristic.com/profile/",
+    "name": "Dario Ristic ",
+    "familyName": "Ristić",
+    "givenName": "Dario",
+    "email": "dario.ristic@gmail.com",
+    "image": "https://darioristic.com/assets/img/dario.ristic.png",
+    "description": "A cognitive human being with an entrepreneurial mind!",
+    "jobTitle": "CEO and Co-founder at Cloud Native",
+    "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Belgrade, Serbia",
+        "postalCode": "11427",
+        "streetAddress": "Radoja Jokisća 05"
+    },
+    "alumniOf": "University of Applied Sciences",
+    "birthPlace": "Banja Luka, BiH",
+    "birthDate": "22.05.1982",
+    "height": "182 cm",
+    "gender": "male",
+    "nationality": "Serbian",
+    "telephone": "381 69 690 123",
+    "sameAs": [
+        "https://www.linkedin.com/in/dario-ristic/",
+        "https://twitter.com/dario_ristic"
+
+    ],
+    "worksFor": "https://cloud-native.rs",
+    "x": {
+        "social": {
+            "default": "dario_ristic",
+            "twitter": "@dario_ristic",
+            "github": "darioristic",
+            "linkedin": "dario_ristic"
+        },
+        "ID": "220598211001"
+    }
+}

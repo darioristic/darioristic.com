@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#"><head>
+    
+<!-- Tech -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="generator" content="Lume">
+<link rel="manifest" href="/manifest.json">
+<link rel="alternate" href="/feed.xml" type="application/atom+xml" title="Dario Ristic personal website feed">
+<link rel="alternate" href="/feed.json" type="application/json" title="Dario Ristic personal website feed">
+
+<!-- Robots -->
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="origin">
+<link rel="canonical" href="https://darioristic.com/posts/napredne-tehnicke-vestine-za-devops/">
+
+<!-- Theme -->
+<meta name="theme-color" content="white">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%3E%3Ctext%20y=%22.9em%22%20font-size=%2290%22%3E👋%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/css/main.css?v=1698739689546">
+
+    
+<!-- Meta -->
+<title>Napredne tehničke veštine potrebne za DevOps | Dario Ristic </title>
+<meta name="title" content="Napredne tehničke veštine potrebne za DevOps | Dario Ristic ">
+<meta name="description" content="Ovaj tekst">
+<meta name="keywords" content="post">
+<meta name="copyright" content="Dario Ristic <dario.ristic@gmail.com>">
+<meta name="author" content="Dario Ristic <dario.ristic@gmail.com>">
+<link type="text/plain" rel="author" href="https://darioristic.com/humans.txt">
+
+    
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Napredne tehničke veštine potrebne za DevOps">
+<meta property="og:site_name" content="Dario Ristic personal website">
+<meta property="og:url" content="https://darioristic.com/posts/napredne-tehnicke-vestine-za-devops/">
+<meta property="og:description" content="Ovaj tekst">
+<meta property="og:locale" content="en">
+
+
+    
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dario_ristic">
+<meta name="twitter:title" content="Napredne tehničke veštine potrebne za DevOps">
+<meta name="twitter:description" content="Ovaj tekst">
+
+
+    
+    <!-- BlogPosting Schema -->
+    <script type="application/ld+json" id="blogposting">
+        {"@context":"http://schema.org","@type":"BlogPosting","@id":"https://darioristic.com/posts/napredne-tehnicke-vestine-za-devops/#blogposting","url":"/posts/napredne-tehnicke-vestine-za-devops/","mainEntityOfPage":"True","headline":"Napredne tehničke veštine potrebne za DevOps","description":"Ovaj tekst","dateCreated":"2020-04-22T00:00:00.000Z","datePublished":"2020-04-22T00:00:00.000Z","dateModified":"2020-04-22T00:00:00.000Z","author":{"@type":"Person","@id":"https://darioristic.com/profile/#person","name":"Dario Ristic ","url":"https://darioristic.com/profile/#person"},"publisher":{"@type":"Organization","name":"Dario Ristic ","logo":{"@type":"ImageObject","url":"https://darioristic.com/assets/img/favicon.png","width":192,"height":192}}}
+    </script>
+    
+    </head>
+    
+<body>
+    <main id="main">
+        
+        <article>
+            <header>
+<h1><a href="/">Napredne tehničke veštine potrebne za DevOps</a></h1>
+<p><time datetime="2020-04-22T00:00:00.000Z">22.4.2020</time></p>
+</header><section>
+<p>Kada steknete osnovne tehničke veštine, možete nastaviti sa upoznavanjem sa alatima i praksama koje se posebno koriste u ulogama DevOps-a. Ovo ni u kom slučaju nije iscrpna lista, ali to su najčešće veštine i teme sa kojima ćete se najverovatnije susresti u većini uloga DevOps -a:</p>
+<p>·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Kontejneri">Kontejneri</a><br>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Continuous_Integration_(CI)">CI/CD Continuous Deployment</a><br>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Infrastructure_as_Code">Infrastructure as Code (IaC)</a><br>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Mikroservisna_Arhitektura">Mikroservisna Arhitektura</a><br>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Kontejnerski_orkestratori">Kontejnerski orkestratori</a><br>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Monitoring">Monitoring</a><br>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#_Software_Reliability_Engineering">Software Reliability Engineering (SRE)</a><br>
+·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#monitoring">Bezbednost</a></p>
+<h1>Kontejneri</h1>
+<p>Tehnologija koja je zvanično postala standard od 2013. god., ali je prisutna mnogo duže kroz Unix Freebsd jail koncept, kada je privi put predstavljena mogućnost hostovanja više particija na jednom sistemu. Kasnije je ovaj koncept usavršavan kroz OpenVZ i Solaris projekte da bih sa pojavom Docker-a postao standard u DevOps poslu. Kontejnerizacija je metoda pakovanja aplikacija sa svim potrebnim fajlovima na lagan i jednostavan način koji ima za cilj da aplikacija koja je spakovana radi u bilo kom okruženju. Kada se kaže okruženje misli se na developer laptop ili public cloud k8s.</p>
+<p>Kontejneri se često koriste u arhitekturi mikroservisa, pa je razumevanje kontejnera neophodno za rad sa developerima. Kontejnerski orkestratori se takođe često koriste ovih dana, što ćemo kasnije opisati.</p>
+<p>Alati</p>
+<ul>
+<li><a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener">Docker</a>&nbsp;- Standardno okruženje za kontejnere koje morate da naučite</li>
+<li><a href="https://docs.docker.com/compose/" target="_blank" rel="noopener">Docker-compose</a>&nbsp;- This tool allows you to configure and orchestrate multiple containers in your computer, especially useful if your application has multiple containers or if you need to bring up the same container over and over.</li>
+<li><a href="https://www.pluralsight.com/courses/docker-deep-dive-update" target="_blank" rel="noopener">Docker Deep Dive</a>&nbsp;- A fantastic and thorough course from the 5-star training instructor</li>
+</ul>
+<p>Sertifikacija</p>
+<ul>
+<li><a href="https://acloudguru.com/course/docker-certified-associate-dca" target="_blank" rel="noopener">Docker Certified Associate</a>​</li>
+</ul>
+<p>Resursi za učenje</p>
+<ul>
+<li><a href="https://training.play-with-docker.com/" target="_blank" rel="noopener">Play with Docker</a>​</li>
+<li><a href="https://www.tutorialspoint.com/docker/docker_compose.htm" target="_blank" rel="noopener">Docker-compose mini tutorial</a>​</li>
+<li><a href="https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf" target="_blank" rel="noopener">Docker cheatsheet</a>​</li>
+<li><a href="https://devhints.io/docker-compose" target="_blank" rel="noopener">Docker-compose cheatsheet</a>​</li>
+</ul>
+<p>Continuous Integration (CI) - Continuous Delivery (CD) - Continuous Deployment</p>
+<p>CI/CD pipeline možemo posmatrati kao proizvodnu liniju u kompaniji koja se bavi softverskim inženjeringom. CI pipeline spaja i testira kod kako bi se osiguralo da je kod spreman za integraciju u glavnu granu - branch, a CD pipeline je njegovo proširenje kako bi se osigurali uslovi za pokretanje na infrastrukturi.</p>
+<p>Dobro razumevanje CI/CD-a zahteva razumevanje git-a, git-branching grananja, različite tipove automatizacije i različite metoda testiranja. Jenkins je najkorišćeniji CI alat i bilo bi dobro da ga naučite. Međutim, nije user friendly za korisnike, a jezik koji se koristi za pisanje pipeline (Groovi) nije baš intuitivan. Gitlab CI je mnogo jednostavniji za upotrebu i mogao bi biti pristupačniji alat za prvo učenje pipelina. Postoji mnogo drugih alata koje možete koristiti za brigu o svojim CI/CD pipeline-ima, ali najvažnije je da ste upoznati sa konceptom.</p>
+<p>Pre učenja CI/CD -a, preporučuje se da naučite Trunk Based Development (TBD) i kako se on upoređuje sa drugim modelima grananja.</p>
+<p>Alati</p>
+<ul>
+<li><a href="https://www.jenkins.io/" target="_blank" rel="noopener">Jenkins</a>​</li>
+<li><a href="https://docs.gitlab.com/ee/ci/" target="_blank" rel="noopener">Gitlab CI</a>​</li>
+</ul>
+<p>Resursi za učenje</p>
+<ul>
+<li><a href="https://medium.com/contino-engineering/branching-models-in-a-nutshell-bf24ea1d888a" target="_blank" rel="noopener">Branching Models</a>​</li>
+<li><a href="https://medium.com/contino-engineering/git-to-know-this-before-you-do-trunk-based-development-tbd-476bc8a7c22f" target="_blank" rel="noopener">Git tutorial for TBD</a>​</li>
+<li><a href="https://youtube.com/playlist?list=PLwLLcwQlnXBxy8H8JEizOcfDh_Vyy6qyv" target="_blank" rel="noopener">Continuous Delivery Playlist by Dave Farley</a>​</li>
+<li><a href="https://www.amazon.co.uk/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912" target="_blank" rel="noopener">Continuous Delivery Book</a>​</li>
+<li><a href="https://www.redhat.com/en/topics/devops/what-is-continuous-delivery" target="_blank" rel="noopener">What is continuous delivery?</a>​</li>
+<li><a href="https://cloud.google.com/architecture/devops/devops-tech-trunk-based-development" target="_blank" rel="noopener">Learning TBD</a>​</li>
+<li><a href="https://cloud.google.com/architecture/devops/devops-tech-continuous-integration" target="_blank" rel="noopener">Continuous Integration</a>​</li>
+<li><a href="https://cloud.google.com/architecture/devops/devops-tech-deployment-automation" target="_blank" rel="noopener">Deployment Automation</a>​</li>
+<li><a href="https://cloud.google.com/architecture/devops/devops-tech-test-automation" target="_blank" rel="noopener">Continuous Testing</a>​</li>
+<li><a href="https://cloud.google.com/architecture/devops/devops-tech-continuous-delivery" target="_blank" rel="noopener">Continuous Delivery</a>​</li>
+<li><a href="https://trunkbaseddevelopment.com/" target="_blank" rel="noopener">Trunk Based Development (TBD)</a>​</li>
+<li><a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank" rel="noopener">Test Driven Development</a></li>
+<li><a href="https://youtu.be/IvWr29afDF8" target="_blank" rel="noopener">Continuous Delivery, it’s great but it won’t work here</a></li>
+<li><a href="https://youtu.be/6DeWOrmvhRM" target="_blank" rel="noopener">Adopting Continuous Delivery</a></li>
+</ul>
+<h2>Infrastructure as Code (IaC)</h2>
+<p>Infrastructure as code - je tehnologija koja vam omogućava da kreirate, konfigurišete i održavate infrastrukturne resurse pisanjem i primenom kod-a. Neko će reći da je ceo DevOps pisanje YAML fajlova .</p>
+<p>Ovo je potpuno drugačiji pristup od toga da ručno unosite komande u konzoli, zato što imate mogućnost da zadržite vaše fajlove, da ih modifikujte, unapredite i replicirate svaki put kada vam je to potrebno.</p>
+<p>Configuration Management (CM) je automatizacija instalirane infrastrukture. Na primer, pokreni skriptu koja će izvršiti update na nekoliko servera odjednom i vratiti vam rezultat. Alati kao što su Ansible, Puppet, Saltstack and Chef omogućavaju da ovo uradite na jednostavan i brz način.</p>
+<p>Alati</p>
+<ul>
+<li><a href="https://www.terraform.io/" target="_blank" rel="noopener">Terraform</a>&nbsp;(Orchestration)</li>
+<li><a href="https://aws.amazon.com/cloudformation/" target="_blank" rel="noopener">CloudFormation</a>&nbsp;(Orchestration for AWS only)</li>
+<li><a href="https://www.ansible.com/resources/get-started" target="_blank" rel="noopener">Ansible</a>&nbsp;(CM)</li>
+<li><a href="https://www.packer.io/" target="_blank" rel="noopener">Packer</a>&nbsp;- za kreiranje Image</li>
+<li><a href="https://cloud.google.com/deployment-manager/docs" target="_blank" rel="noopener">Cloud Deployment Manager</a>&nbsp;(Orchestration for GCP only)</li>
+</ul>
+<p>Resursi za učenje</p>
+<ul>
+<li><a href="https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code" target="_blank" rel="noopener">Learn IaC with Terraform</a>​</li>
+<li><a href="https://www.invensislearning.com/blog/infrastructure-as-a-code-tutorial/" target="_blank" rel="noopener">IaC tutorial</a>​</li>
+<li><a href="https://www.digitalocean.com/community/conceptual_articles/infrastructure-as-code-explained" target="_blank" rel="noopener">IaC Explained</a>​</li>
+<li><a href="https://www.ansible.com/overview/how-ansible-works" target="_blank" rel="noopener">How Ansible works</a>​</li>
+</ul>
+<p>Sertifikacija</p>
+<ul>
+<li><a href="https://www.hashicorp.com/certification/terraform-associate" target="_blank" rel="noopener">Terraform Certification</a>​</li>
+</ul>
+<h2>Mikroservisna Arhitektura</h2>
+<p>Tradicionalno, aplikacije se prave kao monolitna formacija, što zapravo znači da su sve komponente aplikacije integrisane zajedno i rade na istom serveru. Monolitni pristup je opšteprihvaćen i jednostavan za početak rada na novoj aplikaciji, problemi dolaze kasnije kada veličina koda postane velika i kada je potrebno da se rade izmene i unapređenja. Komplikovan i kompleksan sistem baziran na monolitu je jako zahtevan za održavanje i unapređenje.</p>
+<p>Kako bih prevazišli ovaj problem sa danas dostupnom tehnologijom sve više se okrećemo mikroservisnoj arhitekturu aplikacija, gde su se trudimo da pravimo samo neophodne veze između komponenti nekog sistema.</p>
+<p>Mikroservisna arhitektura ima nekoliko prednosti u odnosu na monolitnu arhitekturu</p>
+<ul>
+<li>Lakše je distribuirati odgovornosti i dužnosti</li>
+<li>Svaki tim radi na svom mikroservisu koji je jedna komponenta sistema</li>
+<li>Lakše je nezavisno skalirati opterećenje</li>
+<li>Bolja izolacije u slučaju greške, ako jedan servis stane ne staje ceo sistem</li>
+<li>Bolja izolacije podataka u slučaju GDPR-a i sličnih slučajeva</li>
+<li>Lakše je unapređenje servisa bez rizika da ceo sistem prestane da radi</li>
+</ul>
+<p>Mikroservisi nisu integralni deo svake DevOps role, ali pošto se jako blisko naslanja na ostale koncepte DevOps-a: kontejnere i orkestraciju dobro je da se razume ovaj pristup arhitekturi.</p>
+<p>Kada je reč o tome, mikroservisi nisu nešto što nas rešava svih muka u budućnosti; omogućavaju veću fleksibilnost i skalabilnost ali su takođe daleko složeniji u aspektu infrastrukture i hardverskog okruženja koje može da osigura sve potrebne servise. U suštini trgujete kompleksnošću koda za infrastrukturnu kompleksnost sa ciljem da poboljšate brzinu razvoja i skalabilnost.</p>
+<p>Budući da su mikroservisi mala pakovanja u kontejnere, orkestratori su često poželjna metoda za pokretanje. Sloj inteligencije koju poseduje orkestrator će se pobrinuti za to da vaš kontejner bude adekvatno smešten na klaster i ponovo pokrenut ako postoji problem.</p>
+<p>Važno je da razumete kakva aplikacija treba da bude da bi se kvalifikovala za mikroservis. Jednostavno prevlačenje monolitne aplikacije sa servera i bacanje u kontejnere neće je učiniti mikroservisom. Umesto toga, svaku komponentu je potrebno podeliti i redizajnirati tako da je minimalno povezana i zavisna od ostalih komponenti sistema.</p>
+<p>Takođe, za mikroservise je potreban zaokret u načinu na koji se infrastruktura tradicionalno posmatra. Umesto da servere tretiramo kao kućne ljubimce, oni se tretiraju kao stoka.<a href="#_msocom_1">[ŽP1]</a></p>
+<p>Resursi</p>
+<ul>
+<li><a href="https://youtu.be/zzMLg3Ys5vI" target="_blank" rel="noopener">The Problem with Microservices</a>​</li>
+<li><a href="https://12factor.net/" target="_blank" rel="noopener">12 Factor Application</a></li>
+<li><a href="https://youtu.be/GBTdnfD6s5Q" target="_blank" rel="noopener">When to use Microservices and when not to</a>.</li>
+<li><a href="https://youtube.com/playlist?list=PLdsOZAx8I5umhnn5LLTNJbFgwA3xbycar" target="_blank" rel="noopener">Software Architecture Monday</a></li>
+<li><a href="https://nandovillalba.medium.com/essential-microservice-testing-a838c34a86e3" target="_blank" rel="noopener">Essential Microservice Testing</a>​</li>
+<li><a href="https://learn.particular.net/courses/distributed-systems-design-fundamentals-online" target="_blank" rel="noopener">Advance Distributed System Design</a>​</li>
+<li><a href="https://youtu.be/CZ3wIuvmHeM" target="_blank" rel="noopener">Mastering Chaos, a Netflix Guide to Microservices.</a>​</li>
+<li><a href="https://microservices.io/patterns/microservices.html" target="_blank" rel="noopener">Microservice Pattern</a>​</li>
+</ul>
+<h2>Kontejnerski orkestratori</h2>
+<p>Kontejnerski orkestratori vam omogućavaju da pokrenete kontejnere na jednom ili više servera i horizontalno skalirate opterećenje. To ih čini idealnim platformama za pokretanje mikroservisa.</p>
+<p>Na primer, umesto da jedan ili više kontejnera rade na jednom serveru, orkestrator će se pobrinuti za kreiranje više replika servera i kontejnera kako bi omogućio najbolje performanse prilikom većeg opterećenja.</p>
+<p>Zvuči dovoljno jednostavno ali orkestratori prave određene pretpostavke o tome kako je vaša aplikacija dizajnirana. Na primer, pretpostavljaju da se konfiguracija prosleđuje kao promenljiva okruženja i da se podaci ne čuvaju u stvarnom kontejneru. Tako da ponekad migriranje aplikacije orkestratoru da bi bila skalabilna zahteva ponovno reinženjering da bi bila mikroservis. Metodologija <a href="https://12factor.net/" target="_blank" rel="noopener">12 Factor</a> je metod dizajnirana aplikacija koji ih čini idealnim za rad sa orkestratorima.</p>
+<p>Iako ima mnogo orkestara kao što su Swarm, ECS i Nomad, ubedljivo najpopularniji kontejnerski orkestar je Kubernetes i zato vam preporučujemo da usredsredite svoje napore na Kubernetes.</p>
+<p>Kada učite Kubernetes, preporučujemo pristup od vrha nadole. Počnite sa površnim razumevanjem arhitekture i komponenti, a zatim se igrajte sa već postojećim klasterom, umesto da kreirate sopstveni od početka. To će učiniti vaš proces učenja mnogo manje komplikovanim i takođe će vam olakšati da vidite zašto su sve komponente potrebne.</p>
+<p>Alati</p>
+<ul>
+<li><a href="https://www.docker.com/products/kubernetes" target="_blank" rel="noopener">Docker Kubernetes</a>​</li>
+<li><a href="https://kind.sigs.k8s.io/docs/user/quick-start/" target="_blank" rel="noopener">Kind</a>​</li>
+<li><a href="https://cloud.google.com/kubernetes-engine" target="_blank" rel="noopener">GKE</a>​</li>
+<li><a href="https://aws.amazon.com/eks/?whats-new-cards.sort-by=item.additionalFields.postDateTime&amp;whats-new-cards.sort-order=desc&amp;eks-blogs.sort-by=item.additionalFields.createdDate&amp;eks-blogs.sort-order=desc" target="_blank" rel="noopener">EKS</a>​</li>
+<li><a href="https://azure.microsoft.com/en-gb/services/kubernetes-service/" target="_blank" rel="noopener">AKS</a>​</li>
+<li><a href="https://github.com/derailed/k9s" target="_blank" rel="noopener">K9s</a>​</li>
+<li><a href="https://k0sproject.io/" target="_blank" rel="noopener">k0s</a>​</li>
+</ul>
+<p>Resursi</p>
+<ul>
+<li><a href="https://youtu.be/X48VuDVv0do" target="_blank" rel="noopener">Kubernetes Tutorial for beginners</a>​</li>
+<li><a href="https://kubernetes.io/docs/concepts/overview/components/" target="_blank" rel="noopener">Kubernetes Components</a>​</li>
+<li><a href="https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552" target="_blank" rel="noopener">CKAD Practice Questions</a>​</li>
+<li><a href="https://github.com/walidshaari/Kubernetes-Certified-Administrator" target="_blank" rel="noopener">CKA learning Resursi za učenje</a>​</li>
+<li><a href="https://github.com/kelseyhightower/kubernetes-the-hard-way" target="_blank" rel="noopener">Learning Kubernetes the Hard Way</a>​</li>
+</ul>
+<p>Sertifikacija</p>
+<ul>
+<li><a href="https://www.cncf.io/certification/cka/" target="_blank" rel="noopener">Certified Kubernetes Administrator</a>​</li>
+</ul>
+<h2>Monitoring</h2>
+<p>Pratimo sisteme koji nam govore kada je nešto problem ili će biti problem i posmatramo da osiguramo sigurne performanse i saobraćaj koji nam pomažu da u budućnosti učinimo naše sisteme boljim.&nbsp; Praćenje se radi o razumevanju poznatih i poznatih nepoznanica, uz praćenje testirate hipoteze o ponašanju sistema. Sa druge strane, primetnost je o nepoznatim osobama; o otkrivanju novih problema sa bogatijim podacima i stvaranju hipoteza koje se mogu pratiti.</p>
+<p>Praćenje i posmatranje se može svesti na:</p>
+<p>Evidentiranje: Proces izlaznih sistemskih događaja koji mogu, ali i ne moraju biti greške.</p>
+<p>Metrika: To su vremenske serije koje ukazuju na broj događaja u vremenskom periodu. Mogu se zasnivati na evidencijama ili statusu sistema kao što je RAM itd.</p>
+<p>Distribuirano praćenje: Sa distribuiranom praćenjem dodeljujete pojedinačni ID svakom zahtevu koji dođe u sistem kako biste mogli da pratite njegov put kroz njega i kako je to uticalo na različite mikroservise.</p>
+<p>Indikatori nivoa usluga (SLI)****:** Oni odražavaju trenutno stanje vašeg sistema. SI se obično zasniva na metrikama koje definišete.</p>
+<p>Ciljevi nivoa usluge (SLO)****:** Definišete SLO i osiguravate da se vaš sistem pokreće ispod te metrike. Na primer, ako imate SLO da 95% zahteva treba da bude ispod 200ms i odjednom počnete da vidite previše zahteva u sekundi, onda kršite svoje SLO-ove. Kada se to desi moraćete da dizajnirati za razmeru ili da rešite problem koji uzrokuje ove pikove u performansama da ne biste izgubili korisnike.</p>
+<p>Ugovori o nivou usluga (SLA)** : Ugovori o nivou usluge su ugovori koje imate sa klijentima koji navode kakva će naknada biti data ako se prekrše. Na primer, kupcima biste mogli da kažete da ako vam usluga ne radi više od 95% godišnje platićete im x iznosa novca u kreditima. SLA treba postaviti daleko više od SLO-a, na ovaj način možete da se uhvatite u koštac sa tim pitanjem pre nego što vaši nivoi budu kritični.</p>
+<p>Resursi za učenje</p>
+<ul>
+<li><a href="https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli" target="_blank" rel="noopener">SLIs vs SLOs vs SLAs</a>​</li>
+<li><a href="https://cloud.google.com/architecture/devops/devops-measurement-monitoring-and-observability" target="_blank" rel="noopener">Monitoring and observability</a>​</li>
+<li><a href="https://sre.google/workbook/monitoring/" target="_blank" rel="noopener">Monitoring</a>​</li>
+<li><a href="https://sre.google/sre-book/practical-alerting/" target="_blank" rel="noopener">Practical Alerting</a>​</li>
+<li><a href="https://sre.google/sre-book/service-level-objectives/" target="_blank" rel="noopener">Service Level Objectives</a>​</li>
+<li><a href="https://sre.google/workbook/implementing-slos/" target="_blank" rel="noopener">Implementing SLOs</a>​</li>
+<li><a href="https://sre.google/workbook/alerting-on-slos/" target="_blank" rel="noopener">Alerting on SLOs</a>​</li>
+<li><a href="https://www.scalyr.com/blog/the-10-commandments-of-logging/" target="_blank" rel="noopener">Logging Best Practices</a>​</li>
+<li><a href="https://dzone.com/articles/microservice-observability-part-1-disambiguating-o" target="_blank" rel="noopener">Microservice Observability</a>​</li>
+<li><a href="https://microservices.io/patterns/observability/distributed-tracing.html" target="_blank" rel="noopener">Distributed Tracing</a>​</li>
+</ul>
+</section><footer>
+Takođe, ako ne posedujte fakultetsku diplomu ili ste tek završili fakultet polaganje tehničkih ispita je dobar način za građenje kvalitenog CV-ja. U nastavku teksta posle opisa veštine biće predloženi sertifikati za polaganje ispita iz te oblasti. 
+</footer>
+
+        </article>
+    
+    </main>
+    
+<footer>
+    
+    
+        <div>
+            Newer<br>
+            <a href="/posts/osnovne-tehnicke-vestine-za-devops/" rel="next">Osnovne tehničke veštine potrebne za DevOps</a>
+        </div>
+    
+    <div>
+        <a href="/" rel="home">Back to Index</a>
+    </div>
+</footer>
+
+
+
+
+
+</body></html>

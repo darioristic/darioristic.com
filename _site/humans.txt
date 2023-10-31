@@ -1,0 +1,12 @@
+/* TEAM */
+Name: Dario Ristic 
+Email: dario.ristic@gmail.com
+Location: Belgrade, Serbia
+
+/* THANKS */
+The whole world!
+
+/* SITE */
+Last update: October 31st, 2023
+Standards: HTML5, CSS3, JS, TS, Schema.org, OG
+Software: Lume, markdown-it, PostCSS

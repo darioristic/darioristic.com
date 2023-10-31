@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Dario Ristic personal website</title>
+    <subtitle>Dario Ristic CEO and CO-founder at Cloud Native d.o.o.</subtitle>
+    <link href="http://localhost:3000/feed.xml" rel="self"/>
+	<link href="http://localhost:3000/"/>
+	<id>http://localhost:3000/</id>
+	<updated>2023-10-31T09:08:09+01:00</updated>
+    <author>
+        <name>Dario Ristic </name>
+        <email>dario.ristic@gmail.com</email>
+    </author>
+	<entry>
+		<title>Ultimativni vodič za DevOps početnike</title>
+		<link href="http://localhost:3000/posts/ultimativni-vodic-za-devops-pocetnike/"/>
+        <published>2021-06-22T02:00:00+02:00</published>
+		<updated>2021-06-22T02:00:00+02:00</updated>
+		<id>http://localhost:3000/posts/ultimativni-vodic-za-devops-pocetnike/</id>
+		<content type="html">&lt;header&gt;
+&lt;h1&gt;&lt;a href=&quot;http://localhost:3000/&quot;&gt;Ultimativni vodič za DevOps početnike&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;time datetime=&quot;2021-06-22T00:00:00.000Z&quot;&gt;22.6.2021&lt;/time&gt;&lt;/p&gt;
+&lt;/header&gt;&lt;section&gt;
+&lt;h2&gt;Za koga je ovaj vodič namenjen?&lt;/h2&gt;
+&lt;p&gt;Programerima koji žele da prošire svoje znanje sa operativnim delom ekspertize koja se odnosi na implementaciju, konfigurisanje, održavanje i nadgledanje infrastrukture.&lt;/p&gt;
+&lt;p&gt;Sistem administratorima koji žele da unaprede svoje veštine sa poznavanjem celokupnog životnog ciklusa proizvodnje aplikacije, sa znanjem jednog programskog jezika.&lt;/p&gt;
+&lt;p&gt;Osobe koje ne spadaju u prethodne dve grupe ali se bave tehnologijom u drugim oblastima u karijeri sa znanjem pisanja koda ili drugih srodnih tehnologija.&lt;/p&gt;
+&lt;p&gt;Osobe koje žele da započnu razvoj svoje karijere u pravcu modernih zanimanja danas kao što su DevOps, AIOps i MLOps.&lt;/p&gt;
+&lt;h2&gt;Šta je DevOps?&lt;/h2&gt;
+&lt;p&gt;Patrick Debois, konsultant za razvoj softvera, zaslužan je za stvaranje termina DevOps kada je 2009. godine, nazvao konferenciju DevOps Days, gde se pozabavio nedostatkom Agile metodologije u načinu razvoja softvera.  Reč DevOps je kombinacija izraza Development i Operations, koji predstavljaju zajednički ili deljeni pristup operativnim zadacima u procesu razvoja softvera koje obavljaju timovi za razvoj softvera i IT operativni timovi zaduženi za infrastrukturu (server, storage, networking) na kojoj se softver pokreće – izvršava.&lt;/p&gt;
+&lt;p&gt;U svom najširem značenju, DevOps je filozofija koja promoviše bolju komunikaciju i saradnju između timova – i drugih – u organizaciji. U svom najužem tumačenju, DevOps opisuje usvajanje iterativnog pristupa razvoju softvera, automatizaciju u implementaciji i održavanju infrastrukture. Termin takođe obuhvata i promene u kulturi, poput izgradnje poverenja i kohezije između programera i administratora sistema radi usklađivanja tehnologije  projekata sa poslovnim zahtevima.&lt;/p&gt;
+&lt;h2&gt;Kako je nastao DevOps?&lt;/h2&gt;
+&lt;p&gt;U tradicionalnom razvoju softvera postojala je jasna podela posla između tima operacija i tima za razvoja softvera. Programeri su bili samo delimično uključeni u rad softvera na kome su radili i znali su vrlo malo o tome gde i kako se pokreće. U međuvremenu, operacije (administratori) su znale vrlo malo o tome šta softver zapravo radi ili o tome kako je kreiran, pa su se samo nadali da će raditi kako se očekuje.&lt;/p&gt;
+&lt;p&gt;Ova ideja je suprotstavlja dva tima jedan protiv drugog, jedan sa krajnjim ciljem stabilnosti, drugi sa krajnjim ciljem promena. Izbegavanje konflikata je dovelo do smanjenih unapredjenja aplikacija kroz kreiranje novih verzija i funkcionalnosti kako bi se izbegli prekidi i osigurala stabilnost.&lt;/p&gt;
+&lt;p&gt;Ciklusi puštanja novih verzija aplikacija bili su dugi zato što ni operacije ni programeri nisu razumeli jasno podelu odgovornosti prilikom puštanje nove verzije koda. To je značilo da je potrebno mnogo nedjelja i mnogo prekovremenog rada da bi se implementacije uradile pravilno i često je uzrokovalo značajne zastoje. DevOps ima za cilj da to reši uvođenjem kohezivnije saradnje između programera i operativnih inženjera, sa modelom  preklapanja odgovornosti u celom procesu.&lt;/p&gt;
+&lt;p&gt;Ideja je da se promene u kodu rade često, idealno i više puta dnevno, sa primenom temeljne automatizacije i testiranja kako bi se smanjili zastoji. U slučajevima bilo kakvih problema omogućen je vrlo brz i lak povratak na prethodnu i stabilnu verziju.&lt;/p&gt;
+&lt;h2&gt;Šta je zapravo posao DevOps inženjera?&lt;/h2&gt;
+&lt;p&gt;Opis posla DevOps inženjer se mnogo razlikuje u zavisnosti od tipa poslovne organizacije. Različiti su pristupi kod projektno orjentisani kompaniju u odnosu na produktno orjentisane kompanije. Postoji mišljenje da titula DevOps inženjera ne bi trebalo da postoji, jer je DevOps „kultura i filozofija“ odnosno „način rada i razmišljanja“ – a ne uloga ili pozicija.&lt;/p&gt;
+&lt;p&gt;Ovo nas navodi na zaključak da postoji sloboda u dubini znanja DevOps pozicije u različitom poslovnom okruženju i zavisnosti od potreba organizacije. Često se u zadnje vreme spominje teorija da stvaranje dodatnog DevOps silos tima poništava svrhu preklapanja odgovornosti i zajedničkog rada različitih timova što je suština DevOps-a.&lt;/p&gt;
+&lt;p&gt;Organizacije koje dobro razumeju ovu metodologiju nemaju DevOps pozicije. One rade na stavljanju fokusa na uske specijalizacije u određenim oblastima na pozicijama: inženjera infrastrukture, inženjera za pouzdanost sistema (SRE), CI/CD inženjera, sistem administratora.&lt;/p&gt;
+&lt;p&gt;Jedina stvar koja je sigurna je da DevOps inženjer mora dobro razumeti kulturu i praksu DevOps-a i trebao bi biti u mogućnosti da premosti sve nedostatke u komunikaciji između ostalih članova tima.&lt;/p&gt;
+&lt;p&gt;Iako je DevOps izraz koji može obuhvatiti mnoge uloge, postoje neki zajednički zadaci u ovim različitim ulogama:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dizajn i implementacija CI/CD procesa&lt;/li&gt;
+&lt;li&gt;Automatska izgradnja i konfiguracija infrastrukture&lt;/li&gt;
+&lt;li&gt;Instalacija, konfiguracija i održavanje orkestratora kontejnera&lt;/li&gt;
+&lt;li&gt;Bliska saradnja sa programerima na polju dizajna novih servisa&lt;/li&gt;
+&lt;li&gt;Dizajniranje platformi za nadgledanje i praćenje&lt;/li&gt;
+&lt;li&gt;Pružanje servisa održavanja platforme&lt;/li&gt;
+&lt;li&gt;Obezbedjivanje sigurnosti infrastrukture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Potrebno je malo planiranja i dokumentacije, ali solidna strategija A/B testiranja će vam uštedeti mnogo vremena i povećati vašu profitabilnost na duže staze.&lt;/p&gt;
+&lt;/section&gt;&lt;footer&gt;
+&lt;/footer&gt;</content>
+	</entry>
+	<entry>
+		<title>Koje veštine su potrebne za DevOps?</title>
+		<link href="http://localhost:3000/posts/koje-vestine-su-potrebne-za-devops/"/>
+        <published>2021-05-22T02:00:00+02:00</published>
+		<updated>2021-05-22T02:00:00+02:00</updated>
+		<id>http://localhost:3000/posts/koje-vestine-su-potrebne-za-devops/</id>
+		<content type="html">&lt;header&gt;
+&lt;h1&gt;&lt;a href=&quot;http://localhost:3000/&quot;&gt;Koje veštine su potrebne za DevOps?&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;time datetime=&quot;2021-05-22T00:00:00.000Z&quot;&gt;22.5.2021&lt;/time&gt;&lt;/p&gt;
+&lt;/header&gt;&lt;section&gt;
+&lt;p&gt;Teško je ne biti zbunjen kada počnemo da istražujemo odakle da počnemo sa učenjem ove oblasti. Mnogo novih tehnologija se razvija konstantno i nije lako odabrati pravi put ako uzmemo u obzir da lista konstantno raste.&lt;/p&gt;
+&lt;h2&gt;Dakle, pitanje je šta prvo naučiti?&lt;/h2&gt;
+&lt;p&gt;Podelićemo listu u sledeće kategorije:&lt;/p&gt;
+&lt;h2&gt;Osnovne tehničke veštine&lt;/h2&gt;
+&lt;p&gt;univerzalno znanje neophodno za sve DevOps pozicije.  Ovo je osnovni preduslov za sve dalje vezano za DevOps. Ovde nema izbora da li želite ili ne želite – jednostavno ovu kategoriju morate da znate.&lt;/p&gt;
+&lt;h2&gt;Napredne tehničke veštine&lt;/h2&gt;
+&lt;p&gt;alati i procesi koji su vrlo česti u ulogama DevOps -a, ali koje možda ne koristite ili vam nisu potrebni u svakoj ulozi. Svakako je preporuka da ih upoznate i razumete osnovnu logiku.&lt;/p&gt;
+&lt;h2&gt;Soft skills: ne tehničke veštine&lt;/h2&gt;
+&lt;p&gt;ali veštine koje će vam pomoći u budućnosti razvoja karijere kako da bolje komunicirate sa ljudima na dnevnoj razini.&lt;/p&gt;
+&lt;p&gt;Ne možete da naučite napredne veštine DevOps-a ako nemate osnovne tehničke veštine.&lt;/p&gt;
+&lt;p&gt;Međutim, ne morate biti vrhunski ekspert za bilo koju od osnovnih veština da biste prešli na DevOps veštine. Ni međuljudske veštine se ne mogu potceniti jer uloga DevOps-a podrazumeva uspostavljanje i održavanje efikasne komunikacije sa svim članovima multifinkcionalnog tima.&lt;/p&gt;
+&lt;h2&gt;Šta je od DevOps treninga i kurseva dostupno?&lt;/h2&gt;
+&lt;p&gt;Sertifikacija nije neophodna za DevOps poziciju, u praksi kompanije prilikom zapošljavanja više cene praktično znanje i iskustvo nego sertifikaciju. Ali sa druge strane zadavanje ciljeva polaganja određenih ispita i sticanje sertifikata je jako dobar motiv za učenje.&lt;/p&gt;
+&lt;/section&gt;&lt;footer&gt;
+Takođe, ako ne posedujte fakultetsku diplomu ili ste tek završili fakultet polaganje tehničkih ispita je dobar način za građenje kvalitenog CV-ja. U nastavku teksta posle opisa veštine biće predloženi sertifikati za polaganje ispita iz te oblasti. 
+&lt;/footer&gt;</content>
+	</entry>
+	<entry>
+		<title>Osnovne tehničke veštine potrebne za DevOps</title>
+		<link href="http://localhost:3000/posts/osnovne-tehnicke-vestine-za-devops/"/>
+        <published>2020-07-04T02:00:00+02:00</published>
+		<updated>2020-07-04T02:00:00+02:00</updated>
+		<id>http://localhost:3000/posts/osnovne-tehnicke-vestine-za-devops/</id>
+		<content type="html">&lt;header&gt;
+&lt;h1&gt;&lt;a href=&quot;http://localhost:3000/&quot;&gt;Osnovne tehničke veštine potrebne za DevOps&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;time datetime=&quot;2020-07-04T00:00:00.000Z&quot;&gt;4.7.2020&lt;/time&gt;&lt;/p&gt;
+&lt;/header&gt;&lt;section&gt;
+&lt;p&gt;Teško je ne biti zbunjen kada počnemo da istražujemo odakle da počnemo sa učenjem ove oblasti. Mnogo novih tehnologija se razvija konstantno i nije lako odabrati pravi put ako uzmemo u obzir da lista konstantno raste.&lt;/p&gt;
+&lt;h2&gt;Dakle, pitanje je šta prvo naučiti?&lt;/h2&gt;
+&lt;h1&gt;&lt;strong&gt;Osnovne tehničke veštine&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Ovih šest tehničkih veština zajedničke su svakoj ulozi DevOps-a. Nakon što savladate ove veštine, spremni ste za početak apliciranja za uloge početnog nivoa ili stažiranje dok se krećete lestvicom učenja ka DevOps tehničkim veštinama:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#_Linux&quot;&gt;Linux&lt;/a&gt; - fundamentalno&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#_Programski_jezik&quot;&gt;Programski jezik&lt;/a&gt; - osnovno iskustvo&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#_Bash&quot;&gt;Bash&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#_Git&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#_Osnove_mre%C5%BEe&quot;&gt;Mreža&lt;/a&gt; - fundamentalno&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#_Cloud_Platform&quot;&gt;Public Cloud Platforme&lt;/a&gt; - AWS, Azure, GCP - fundamentalno&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Linux&lt;/h2&gt;
+&lt;p&gt;Linux je  operativni sistem (OS) otvorenog koda koji je baziran na Unix-u. Većinu radnog vremena radeći na bilo kojoj DevOps poziciji provodićete u Linux svetu. Naravno i Microsoft ima svoj put baziran na Windows operativnom sistemu koji možete da sledite, ali većina servisa je na otvorenom kodu sa velikom podrškom zajednice i vodećih kompanija poput IBM, Oracle, Google.&lt;/p&gt;
+&lt;p&gt;Postoji mnogo resursa koji će vam pomoći u učenju Linux-a on line. Jedan od načina za početak mogao bi biti pregled nastavnog programa &lt;a href=&quot;https://www.lpi.org/our-certifications/lpic-1-overview&quot;&gt;LPIC ispita&lt;/a&gt; i polaganje ispita za dobijanje sertifikata.&lt;/p&gt;
+&lt;p&gt;Resursi za učenje:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/&quot;&gt;Beginner’s Guide  to Linux&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://files.catwell.info/misc/mirror/the-unix-programming-environment-kernighan-pike.pdf&quot;&gt;The Unix Programming Environment&lt;/a&gt;: Ne morate da znate sve što je u knjizi, ali dobro je da znate kako Linux zapravo radi.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://doc.lagout.org/operating%20system%20/linux/Unix%20Power%20Tools.pdf&quot;&gt;Unix Power Tools&lt;/a&gt; — Velika lista alata koja često dolazi upakovana u različite linux distribucije. Nemojte da vas plaši veličina, koristićete verovatno oko 20% samo.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://pages.cs.wisc.edu/~remzi/OSTEP/&quot;&gt;Three Easy Pieces&lt;/a&gt; - Dobra knjiga koja objašnjava kako OS radi.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.howtogeek.com/412055/37-important-linux-commands-you-should-know/&quot;&gt;List of commonly used commands in Linux&lt;/a&gt;​  - Lista korisnih komadi u Linux-u&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/&quot;&gt;Linux Guide&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sertifikacija&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.comptia.org/certifications/linux&quot;&gt;Comptia Linux&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.lpi.org/our-certifications/lpic-1-overview&quot;&gt;LPIC I&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.lpi.org/our-certifications/lpic-2-overview&quot;&gt;LPIC II&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.redhat.com/en/services/certification/rhcsa&quot;&gt;RedHat RHCSA&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Programski jezik&lt;/h2&gt;
+&lt;p&gt;Ne brinite, ne morate biti &lt;a href=&quot;https://en.wikipedia.org/wiki/Dennis_Ritchie&quot;&gt;Dennis Ritchie&lt;/a&gt; da biste postali DevOps inženjer. U stvari, čak ni ne morate sebe nazivati programerom da biste započeli mnoge pozicije u DevOps-u.&lt;/p&gt;
+&lt;p&gt;Međutim, morate barem da poznajete osnovne programerske koncepte, kao što su petlje, promenljive, nizovi, liste i itd. To će neće biti samo korisno kada morate da pročitate ili izmenite neki kod, već biti od suštinskog značaja i prilikom pisanja skripti, yaml fajlova i automatizacije procesa.&lt;/p&gt;
+&lt;p&gt;Savetujemo da počnete sa Python-om naučite osnove, a zatim napravite nalog na platformi poput &lt;a href=&quot;https://edabit.com/&quot;&gt;Edabita&lt;/a&gt; i pređite na srednji nivo. Ako dođete do tog nivoa, ne biste trebali imati velikih problema u pisanju skripti i obavljanju većine poslova automatizacije koji vam se nađu. Takođe, u nekom trenutku vašeg učenja, vredi se upoznati sa uobičajenim obrascima dizajna i algoritmima. Ovo nije neophodno za početak rada u DevOps -u, ali će vam dobro doći.&lt;/p&gt;
+&lt;p&gt;Resursi za učenje&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.codecademy.com/learn/learn-how-to-code/modules/bop-i&quot;&gt;Codecademy basics of programming&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.learnpython.org/&quot;&gt;Python Free Interactive Tutorial&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://edabit.com/challenges/python3&quot;&gt;Edabit&lt;/a&gt; - Sajt na kome dobijate programerske izazove.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.hackerrank.com/domains/python?filters%5Bsubdomains%5D%5B%5D=py-introduction&quot;&gt;Hackerrank&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://u.osu.edu/cstutorials/2016/11/21/7-algorithms-and-data-structures-every-programmer-must-know/&quot;&gt;Common Algorithms&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://refactoring.guru/design-patterns/catalog&quot;&gt;Design Patterns&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sertifikacija&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://pythoninstitute.org/certification/&quot;&gt;Python Sertifikacija&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Bash&lt;/h2&gt;
+&lt;p&gt;Bash je najvažniji skriptini jezik za automatizaciju zadataka u Unix okruženju (Powershell bi bio ekvivalent za Windows). Čak i ako više volite skriptovanje na Python-u ili bilo kojem drugom jeziku, bash je najrasprostranjeniji i bit će vam jako teško raditi ovaj posao bez znanja kako ga koristiti.&lt;/p&gt;
+&lt;p&gt;Ne morate biti čudo od programera da biste postigli većinu zadataka sa kojima ćete se svakodnevno susretati, ali određeno osnovno znanje programiranja definitivno pomaže.&lt;/p&gt;
+&lt;p&gt;Resursi za učenje&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tldp.org/LDP/Bash-Beginners-Guide/html/&quot;&gt;Beginner Bash Guide&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://tldp.org/LDP/abs/html/&quot;&gt;Advance Scripting Guide&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.learnshell.org/&quot;&gt;Bash interactive tutorial&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cmdchallenge.com/&quot;&gt;Bash Interactive Challenges&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://guide.bash.academy/&quot;&gt;The Bash Guide&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.katacoda.com/courses/linux&quot;&gt;Bash Katacoda&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://index-of.es/Programming/Bash/O%27Reilly%20bash%20CookBook.pdf&quot;&gt;Bash Cookbook&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Osnove mreže&lt;/h2&gt;
+&lt;p&gt;Danas je većina infrastrukture bazirana na javnim cloud provajderima ili Kubernetes klasterima koji se nalaze na lokacijama korisnika. Da bi uspešno kreirali infrastrukturu potrebno je da imate osnovno znanje o mrežnim pojmovima. Ne očekuje se da ste nekada bili mrežni inženjer ali da znate odgovore na ova dole pitanja je poželjno.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Šta je ip adresa?&lt;/li&gt;
+&lt;li&gt;Šta je subnet i subnet mask?&lt;/li&gt;
+&lt;li&gt;Šta je ruta?&lt;/li&gt;
+&lt;li&gt;Šta je ruter a šta je switch?&lt;/li&gt;
+&lt;li&gt;Šta je VPC?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Učenje gore navedenog je od suštinskog  značaja za rešavanje problema i kasnije dizajniranjem VPC strategije u infrastrukturi.&lt;/p&gt;
+&lt;p&gt;Resursi za učenje&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.coursera.org/learn/computer-networking&quot;&gt;The Bits and Bytes of Computer Networking&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/&quot;&gt;Udemy Networking Course&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sertifikacija&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.comptia.org/certifications/network&quot;&gt;Comptia Network&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Git&lt;/h2&gt;
+&lt;p&gt;Git je distribuirani sistem kontrole verzija koda. Omogućava nam praćenje promena u kodu od strane tima koji zajednički sarađuje na projektu. Koriste ga svi softverski inženjering i operativni timovi. Toplo vam preporučujemo da provedete neko vreme upoznajući se sa njim i pojmovima branches, rebase, merging, itd.&lt;/p&gt;
+&lt;p&gt;Resursi za učenje&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://rogerdudler.github.io/git-guide/&quot;&gt;git — the simple guide&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://learngitbranching.js.org/&quot;&gt;Learn git Branching&lt;/a&gt; — interactive course with challenges.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.katacoda.com/courses/git&quot;&gt;Katacoda Interactive git&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/architecture/devops/devops-tech-version-control&quot;&gt;Version Control&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Cloud Platform&lt;/h2&gt;
+&lt;p&gt;Postoji nekoliko javni cloud platformi koje možete izabrati za početak. Tri najveća su AWS, GCP i Azure. Većina počinje sa AWS-om jer se on često traži u oglasima za posao. Google - GCP  je intuitivan i jednostavan za upotrebu. Takođe dobijate 300 dolara besplatnog kredita za početak. Azure je takođe dobar izbor ako više volite da radite na Microsoft okruženju i tu želite da vaša karijera ide.&lt;/p&gt;
+&lt;p&gt;Resursi za učenje&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/free&quot;&gt;Google Cloud Free Offering&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://google.qwiklabs.com/&quot;&gt;Quicklabs&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;Azure&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&amp;amp;all-free-tier.sort-order=asc&quot;&gt;AWS Free Tier&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.coursera.org/googlecloud&quot;&gt;Google Cloud Free Courses&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.coursera.org/courses?query=aws&quot;&gt;AWS and other Cloud Computing Agnostic Free Courses&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sertifikacija&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/certification/cloud-digital-leader&quot;&gt;Cloud Digital Leader GCP certification&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/certification/cloud-engineer&quot;&gt;GCP Associate Cloud Engineer&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/certification/certified-cloud-practitioner/?ch=cta&amp;amp;cta=header&amp;amp;p=2&quot;&gt;AWS Certified Cloud Practitioner&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/&quot;&gt;Azure Fundamentals&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/certification/cloud-network-engineer&quot;&gt;GCP Cloud Network Engineer&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;&lt;footer&gt;
+Takođe, ako ne posedujte fakultetsku diplomu ili ste tek završili fakultet polaganje tehničkih ispita je dobar način za građenje kvalitenog CV-ja. U nastavku teksta posle opisa veštine biće predloženi sertifikati za polaganje ispita iz te oblasti. 
+&lt;/footer&gt;</content>
+	</entry>
+	<entry>
+		<title>Napredne tehničke veštine potrebne za DevOps</title>
+		<link href="http://localhost:3000/posts/napredne-tehnicke-vestine-za-devops/"/>
+        <published>2020-04-22T02:00:00+02:00</published>
+		<updated>2020-04-22T02:00:00+02:00</updated>
+		<id>http://localhost:3000/posts/napredne-tehnicke-vestine-za-devops/</id>
+		<content type="html">&lt;header&gt;
+&lt;h1&gt;&lt;a href=&quot;http://localhost:3000/&quot;&gt;Napredne tehničke veštine potrebne za DevOps&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;time datetime=&quot;2020-04-22T00:00:00.000Z&quot;&gt;22.4.2020&lt;/time&gt;&lt;/p&gt;
+&lt;/header&gt;&lt;section&gt;
+&lt;p&gt;Kada steknete osnovne tehničke veštine, možete nastaviti sa upoznavanjem sa alatima i praksama koje se posebno koriste u ulogama DevOps-a. Ovo ni u kom slučaju nije iscrpna lista, ali to su najčešće veštine i teme sa kojima ćete se najverovatnije susresti u većini uloga DevOps -a:&lt;/p&gt;
+&lt;p&gt;·      &lt;a href=&quot;#_Kontejneri&quot;&gt;Kontejneri&lt;/a&gt;&lt;br&gt;
+·      &lt;a href=&quot;#_Continuous_Integration_(CI)&quot;&gt;CI/CD Continuous Deployment&lt;/a&gt;&lt;br&gt;
+·      &lt;a href=&quot;#_Infrastructure_as_Code&quot;&gt;Infrastructure as Code (IaC)&lt;/a&gt;&lt;br&gt;
+·      &lt;a href=&quot;#_Mikroservisna_Arhitektura&quot;&gt;Mikroservisna Arhitektura&lt;/a&gt;&lt;br&gt;
+·      &lt;a href=&quot;#_Kontejnerski_orkestratori&quot;&gt;Kontejnerski orkestratori&lt;/a&gt;&lt;br&gt;
+·      &lt;a href=&quot;#_Monitoring&quot;&gt;Monitoring&lt;/a&gt;&lt;br&gt;
+·      &lt;a href=&quot;#_Software_Reliability_Engineering&quot;&gt;Software Reliability Engineering (SRE)&lt;/a&gt;&lt;br&gt;
+·      &lt;a href=&quot;#monitoring&quot;&gt;Bezbednost&lt;/a&gt;&lt;/p&gt;
+&lt;h1&gt;Kontejneri&lt;/h1&gt;
+&lt;p&gt;Tehnologija koja je zvanično postala standard od 2013. god., ali je prisutna mnogo duže kroz Unix Freebsd jail koncept, kada je privi put predstavljena mogućnost hostovanja više particija na jednom sistemu. Kasnije je ovaj koncept usavršavan kroz OpenVZ i Solaris projekte da bih sa pojavom Docker-a postao standard u DevOps poslu. Kontejnerizacija je metoda pakovanja aplikacija sa svim potrebnim fajlovima na lagan i jednostavan način koji ima za cilj da aplikacija koja je spakovana radi u bilo kom okruženju. Kada se kaže okruženje misli se na developer laptop ili public cloud k8s.&lt;/p&gt;
+&lt;p&gt;Kontejneri se često koriste u arhitekturi mikroservisa, pa je razumevanje kontejnera neophodno za rad sa developerima. Kontejnerski orkestratori se takođe često koriste ovih dana, što ćemo kasnije opisati.&lt;/p&gt;
+&lt;p&gt;Alati&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.docker.com/get-started/&quot;&gt;Docker&lt;/a&gt; - Standardno okruženje za kontejnere koje morate da naučite&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.docker.com/compose/&quot;&gt;Docker-compose&lt;/a&gt; - This tool allows you to configure and orchestrate multiple containers in your computer, especially useful if your application has multiple containers or if you need to bring up the same container over and over.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.pluralsight.com/courses/docker-deep-dive-update&quot;&gt;Docker Deep Dive&lt;/a&gt; - A fantastic and thorough course from the 5-star training instructor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sertifikacija&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://acloudguru.com/course/docker-certified-associate-dca&quot;&gt;Docker Certified Associate&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Resursi za učenje&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://training.play-with-docker.com/&quot;&gt;Play with Docker&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.tutorialspoint.com/docker/docker_compose.htm&quot;&gt;Docker-compose mini tutorial&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.docker.com/sites/default/files/d8/2019-09/docker-cheat-sheet.pdf&quot;&gt;Docker cheatsheet&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://devhints.io/docker-compose&quot;&gt;Docker-compose cheatsheet&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Continuous Integration (CI) - Continuous Delivery (CD) - Continuous Deployment&lt;/p&gt;
+&lt;p&gt;CI/CD pipeline možemo posmatrati kao proizvodnu liniju u kompaniji koja se bavi softverskim inženjeringom. CI pipeline spaja i testira kod kako bi se osiguralo da je kod spreman za integraciju u glavnu granu - branch, a CD pipeline je njegovo proširenje kako bi se osigurali uslovi za pokretanje na infrastrukturi.&lt;/p&gt;
+&lt;p&gt;Dobro razumevanje CI/CD-a zahteva razumevanje git-a, git-branching grananja, različite tipove automatizacije i različite metoda testiranja. Jenkins je najkorišćeniji CI alat i bilo bi dobro da ga naučite. Međutim, nije user friendly za korisnike, a jezik koji se koristi za pisanje pipeline (Groovi) nije baš intuitivan. Gitlab CI je mnogo jednostavniji za upotrebu i mogao bi biti pristupačniji alat za prvo učenje pipelina. Postoji mnogo drugih alata koje možete koristiti za brigu o svojim CI/CD pipeline-ima, ali najvažnije je da ste upoznati sa konceptom.&lt;/p&gt;
+&lt;p&gt;Pre učenja CI/CD -a, preporučuje se da naučite Trunk Based Development (TBD) i kako se on upoređuje sa drugim modelima grananja.&lt;/p&gt;
+&lt;p&gt;Alati&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.jenkins.io/&quot;&gt;Jenkins&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.gitlab.com/ee/ci/&quot;&gt;Gitlab CI&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Resursi za učenje&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/contino-engineering/branching-models-in-a-nutshell-bf24ea1d888a&quot;&gt;Branching Models&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/contino-engineering/git-to-know-this-before-you-do-trunk-based-development-tbd-476bc8a7c22f&quot;&gt;Git tutorial for TBD&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtube.com/playlist?list=PLwLLcwQlnXBxy8H8JEizOcfDh_Vyy6qyv&quot;&gt;Continuous Delivery Playlist by Dave Farley&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.amazon.co.uk/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912&quot;&gt;Continuous Delivery Book&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.redhat.com/en/topics/devops/what-is-continuous-delivery&quot;&gt;What is continuous delivery?&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/architecture/devops/devops-tech-trunk-based-development&quot;&gt;Learning TBD&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/architecture/devops/devops-tech-continuous-integration&quot;&gt;Continuous Integration&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/architecture/devops/devops-tech-deployment-automation&quot;&gt;Deployment Automation&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/architecture/devops/devops-tech-test-automation&quot;&gt;Continuous Testing&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/architecture/devops/devops-tech-continuous-delivery&quot;&gt;Continuous Delivery&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://trunkbaseddevelopment.com/&quot;&gt;Trunk Based Development (TBD)&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Test-driven_development&quot;&gt;Test Driven Development&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/IvWr29afDF8&quot;&gt;Continuous Delivery, it’s great but it won’t work here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/6DeWOrmvhRM&quot;&gt;Adopting Continuous Delivery&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Infrastructure as Code (IaC)&lt;/h2&gt;
+&lt;p&gt;Infrastructure as code - je tehnologija koja vam omogućava da kreirate, konfigurišete i održavate infrastrukturne resurse pisanjem i primenom kod-a. Neko će reći da je ceo DevOps pisanje YAML fajlova .&lt;/p&gt;
+&lt;p&gt;Ovo je potpuno drugačiji pristup od toga da ručno unosite komande u konzoli, zato što imate mogućnost da zadržite vaše fajlove, da ih modifikujte, unapredite i replicirate svaki put kada vam je to potrebno.&lt;/p&gt;
+&lt;p&gt;Configuration Management (CM) je automatizacija instalirane infrastrukture. Na primer, pokreni skriptu koja će izvršiti update na nekoliko servera odjednom i vratiti vam rezultat. Alati kao što su Ansible, Puppet, Saltstack and Chef omogućavaju da ovo uradite na jednostavan i brz način.&lt;/p&gt;
+&lt;p&gt;Alati&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.terraform.io/&quot;&gt;Terraform&lt;/a&gt; (Orchestration)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/cloudformation/&quot;&gt;CloudFormation&lt;/a&gt; (Orchestration for AWS only)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.ansible.com/resources/get-started&quot;&gt;Ansible&lt;/a&gt; (CM)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.packer.io/&quot;&gt;Packer&lt;/a&gt; - za kreiranje Image&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/deployment-manager/docs&quot;&gt;Cloud Deployment Manager&lt;/a&gt; (Orchestration for GCP only)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Resursi za učenje&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://learn.hashicorp.com/tutorials/terraform/infrastructure-as-code&quot;&gt;Learn IaC with Terraform&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.invensislearning.com/blog/infrastructure-as-a-code-tutorial/&quot;&gt;IaC tutorial&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/conceptual_articles/infrastructure-as-code-explained&quot;&gt;IaC Explained&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.ansible.com/overview/how-ansible-works&quot;&gt;How Ansible works&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sertifikacija&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.hashicorp.com/certification/terraform-associate&quot;&gt;Terraform Certification&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Mikroservisna Arhitektura&lt;/h2&gt;
+&lt;p&gt;Tradicionalno, aplikacije se prave kao monolitna formacija, što zapravo znači da su sve komponente aplikacije integrisane zajedno i rade na istom serveru. Monolitni pristup je opšteprihvaćen i jednostavan za početak rada na novoj aplikaciji, problemi dolaze kasnije kada veličina koda postane velika i kada je potrebno da se rade izmene i unapređenja. Komplikovan i kompleksan sistem baziran na monolitu je jako zahtevan za održavanje i unapređenje.&lt;/p&gt;
+&lt;p&gt;Kako bih prevazišli ovaj problem sa danas dostupnom tehnologijom sve više se okrećemo mikroservisnoj arhitekturu aplikacija, gde su se trudimo da pravimo samo neophodne veze između komponenti nekog sistema.&lt;/p&gt;
+&lt;p&gt;Mikroservisna arhitektura ima nekoliko prednosti u odnosu na monolitnu arhitekturu&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lakše je distribuirati odgovornosti i dužnosti&lt;/li&gt;
+&lt;li&gt;Svaki tim radi na svom mikroservisu koji je jedna komponenta sistema&lt;/li&gt;
+&lt;li&gt;Lakše je nezavisno skalirati opterećenje&lt;/li&gt;
+&lt;li&gt;Bolja izolacije u slučaju greške, ako jedan servis stane ne staje ceo sistem&lt;/li&gt;
+&lt;li&gt;Bolja izolacije podataka u slučaju GDPR-a i sličnih slučajeva&lt;/li&gt;
+&lt;li&gt;Lakše je unapređenje servisa bez rizika da ceo sistem prestane da radi&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mikroservisi nisu integralni deo svake DevOps role, ali pošto se jako blisko naslanja na ostale koncepte DevOps-a: kontejnere i orkestraciju dobro je da se razume ovaj pristup arhitekturi.&lt;/p&gt;
+&lt;p&gt;Kada je reč o tome, mikroservisi nisu nešto što nas rešava svih muka u budućnosti; omogućavaju veću fleksibilnost i skalabilnost ali su takođe daleko složeniji u aspektu infrastrukture i hardverskog okruženja koje može da osigura sve potrebne servise. U suštini trgujete kompleksnošću koda za infrastrukturnu kompleksnost sa ciljem da poboljšate brzinu razvoja i skalabilnost.&lt;/p&gt;
+&lt;p&gt;Budući da su mikroservisi mala pakovanja u kontejnere, orkestratori su često poželjna metoda za pokretanje. Sloj inteligencije koju poseduje orkestrator će se pobrinuti za to da vaš kontejner bude adekvatno smešten na klaster i ponovo pokrenut ako postoji problem.&lt;/p&gt;
+&lt;p&gt;Važno je da razumete kakva aplikacija treba da bude da bi se kvalifikovala za mikroservis. Jednostavno prevlačenje monolitne aplikacije sa servera i bacanje u kontejnere neće je učiniti mikroservisom. Umesto toga, svaku komponentu je potrebno podeliti i redizajnirati tako da je minimalno povezana i zavisna od ostalih komponenti sistema.&lt;/p&gt;
+&lt;p&gt;Takođe, za mikroservise je potreban zaokret u načinu na koji se infrastruktura tradicionalno posmatra. Umesto da servere tretiramo kao kućne ljubimce, oni se tretiraju kao stoka.&lt;a href=&quot;#_msocom_1&quot;&gt;[ŽP1]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Resursi&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/zzMLg3Ys5vI&quot;&gt;The Problem with Microservices&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://12factor.net/&quot;&gt;12 Factor Application&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/GBTdnfD6s5Q&quot;&gt;When to use Microservices and when not to&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtube.com/playlist?list=PLdsOZAx8I5umhnn5LLTNJbFgwA3xbycar&quot;&gt;Software Architecture Monday&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://nandovillalba.medium.com/essential-microservice-testing-a838c34a86e3&quot;&gt;Essential Microservice Testing&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://learn.particular.net/courses/distributed-systems-design-fundamentals-online&quot;&gt;Advance Distributed System Design&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/CZ3wIuvmHeM&quot;&gt;Mastering Chaos, a Netflix Guide to Microservices.&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://microservices.io/patterns/microservices.html&quot;&gt;Microservice Pattern&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Kontejnerski orkestratori&lt;/h2&gt;
+&lt;p&gt;Kontejnerski orkestratori vam omogućavaju da pokrenete kontejnere na jednom ili više servera i horizontalno skalirate opterećenje. To ih čini idealnim platformama za pokretanje mikroservisa.&lt;/p&gt;
+&lt;p&gt;Na primer, umesto da jedan ili više kontejnera rade na jednom serveru, orkestrator će se pobrinuti za kreiranje više replika servera i kontejnera kako bi omogućio najbolje performanse prilikom većeg opterećenja.&lt;/p&gt;
+&lt;p&gt;Zvuči dovoljno jednostavno ali orkestratori prave određene pretpostavke o tome kako je vaša aplikacija dizajnirana. Na primer, pretpostavljaju da se konfiguracija prosleđuje kao promenljiva okruženja i da se podaci ne čuvaju u stvarnom kontejneru. Tako da ponekad migriranje aplikacije orkestratoru da bi bila skalabilna zahteva ponovno reinženjering da bi bila mikroservis. Metodologija &lt;a href=&quot;https://12factor.net/&quot;&gt;12 Factor&lt;/a&gt; je metod dizajnirana aplikacija koji ih čini idealnim za rad sa orkestratorima.&lt;/p&gt;
+&lt;p&gt;Iako ima mnogo orkestara kao što su Swarm, ECS i Nomad, ubedljivo najpopularniji kontejnerski orkestar je Kubernetes i zato vam preporučujemo da usredsredite svoje napore na Kubernetes.&lt;/p&gt;
+&lt;p&gt;Kada učite Kubernetes, preporučujemo pristup od vrha nadole. Počnite sa površnim razumevanjem arhitekture i komponenti, a zatim se igrajte sa već postojećim klasterom, umesto da kreirate sopstveni od početka. To će učiniti vaš proces učenja mnogo manje komplikovanim i takođe će vam olakšati da vidite zašto su sve komponente potrebne.&lt;/p&gt;
+&lt;p&gt;Alati&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.docker.com/products/kubernetes&quot;&gt;Docker Kubernetes&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://kind.sigs.k8s.io/docs/user/quick-start/&quot;&gt;Kind&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/kubernetes-engine&quot;&gt;GKE&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://aws.amazon.com/eks/?whats-new-cards.sort-by=item.additionalFields.postDateTime&amp;amp;whats-new-cards.sort-order=desc&amp;amp;eks-blogs.sort-by=item.additionalFields.createdDate&amp;amp;eks-blogs.sort-order=desc&quot;&gt;EKS&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://azure.microsoft.com/en-gb/services/kubernetes-service/&quot;&gt;AKS&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/derailed/k9s&quot;&gt;K9s&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://k0sproject.io/&quot;&gt;k0s&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Resursi&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://youtu.be/X48VuDVv0do&quot;&gt;Kubernetes Tutorial for beginners&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://kubernetes.io/docs/concepts/overview/components/&quot;&gt;Kubernetes Components&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552&quot;&gt;CKAD Practice Questions&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/walidshaari/Kubernetes-Certified-Administrator&quot;&gt;CKA learning Resursi za učenje&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/kelseyhightower/kubernetes-the-hard-way&quot;&gt;Learning Kubernetes the Hard Way&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sertifikacija&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.cncf.io/certification/cka/&quot;&gt;Certified Kubernetes Administrator&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Monitoring&lt;/h2&gt;
+&lt;p&gt;Pratimo sisteme koji nam govore kada je nešto problem ili će biti problem i posmatramo da osiguramo sigurne performanse i saobraćaj koji nam pomažu da u budućnosti učinimo naše sisteme boljim.  Praćenje se radi o razumevanju poznatih i poznatih nepoznanica, uz praćenje testirate hipoteze o ponašanju sistema. Sa druge strane, primetnost je o nepoznatim osobama; o otkrivanju novih problema sa bogatijim podacima i stvaranju hipoteza koje se mogu pratiti.&lt;/p&gt;
+&lt;p&gt;Praćenje i posmatranje se može svesti na:&lt;/p&gt;
+&lt;p&gt;Evidentiranje: Proces izlaznih sistemskih događaja koji mogu, ali i ne moraju biti greške.&lt;/p&gt;
+&lt;p&gt;Metrika: To su vremenske serije koje ukazuju na broj događaja u vremenskom periodu. Mogu se zasnivati na evidencijama ili statusu sistema kao što je RAM itd.&lt;/p&gt;
+&lt;p&gt;Distribuirano praćenje: Sa distribuiranom praćenjem dodeljujete pojedinačni ID svakom zahtevu koji dođe u sistem kako biste mogli da pratite njegov put kroz njega i kako je to uticalo na različite mikroservise.&lt;/p&gt;
+&lt;p&gt;Indikatori nivoa usluga (SLI)****:** Oni odražavaju trenutno stanje vašeg sistema. SI se obično zasniva na metrikama koje definišete.&lt;/p&gt;
+&lt;p&gt;Ciljevi nivoa usluge (SLO)****:** Definišete SLO i osiguravate da se vaš sistem pokreće ispod te metrike. Na primer, ako imate SLO da 95% zahteva treba da bude ispod 200ms i odjednom počnete da vidite previše zahteva u sekundi, onda kršite svoje SLO-ove. Kada se to desi moraćete da dizajnirati za razmeru ili da rešite problem koji uzrokuje ove pikove u performansama da ne biste izgubili korisnike.&lt;/p&gt;
+&lt;p&gt;Ugovori o nivou usluga (SLA)** : Ugovori o nivou usluge su ugovori koje imate sa klijentima koji navode kakva će naknada biti data ako se prekrše. Na primer, kupcima biste mogli da kažete da ako vam usluga ne radi više od 95% godišnje platićete im x iznosa novca u kreditima. SLA treba postaviti daleko više od SLO-a, na ovaj način možete da se uhvatite u koštac sa tim pitanjem pre nego što vaši nivoi budu kritični.&lt;/p&gt;
+&lt;p&gt;Resursi za učenje&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.atlassian.com/incident-management/kpis/sla-vs-slo-vs-sli&quot;&gt;SLIs vs SLOs vs SLAs&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://cloud.google.com/architecture/devops/devops-measurement-monitoring-and-observability&quot;&gt;Monitoring and observability&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sre.google/workbook/monitoring/&quot;&gt;Monitoring&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sre.google/sre-book/practical-alerting/&quot;&gt;Practical Alerting&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sre.google/sre-book/service-level-objectives/&quot;&gt;Service Level Objectives&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sre.google/workbook/implementing-slos/&quot;&gt;Implementing SLOs&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://sre.google/workbook/alerting-on-slos/&quot;&gt;Alerting on SLOs&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.scalyr.com/blog/the-10-commandments-of-logging/&quot;&gt;Logging Best Practices&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://dzone.com/articles/microservice-observability-part-1-disambiguating-o&quot;&gt;Microservice Observability&lt;/a&gt;​&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://microservices.io/patterns/observability/distributed-tracing.html&quot;&gt;Distributed Tracing&lt;/a&gt;​&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/section&gt;&lt;footer&gt;
+Takođe, ako ne posedujte fakultetsku diplomu ili ste tek završili fakultet polaganje tehničkih ispita je dobar način za građenje kvalitenog CV-ja. U nastavku teksta posle opisa veštine biće predloženi sertifikati za polaganje ispita iz te oblasti. 
+&lt;/footer&gt;</content>
+	</entry>
+</feed>
